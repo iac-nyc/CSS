@@ -1,0 +1,91 @@
+/* 
+Author: Iftekhar A Chowdhury;
+Version: 2.0.1;
+ */
+body{
+	background:#B3B3B3;    
+    background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+
+	margin:2%;
+	font-size: 125%;
+
+}
+
+
+
+header{
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+h1{
+	color: #ffffff;
+}
+
+nav{
+	font-variant: small-caps;
+	font-family: Arial, "Times New Roman", serif;
+	font-size: 100%;
+}
+
+nav>a:hover {
+  background: #1a237e;
+  color: #ffffff;
+  border-radius:0;
+}
+
+nav a{
+	display: inline-block;
+	background-color: #ffffff;
+    color:
+    opacity: 0.7;
+	width:5%;
+    border-radius:25px;
+    text-decoration: none;
+    background-size:cover; 
+  
+    background: -moz-linear-gradient(top, #ffffff 0%, #303f9f 100%);
+	background: -webkit-linear-gradient(#ffffff 0%, #303f9f 100%);
+	background: -o-linear-gradient(#ffffff 0%, #303f9f 100%);
+	background: linear-gradient(#ffffff 0%, #303f9f 100%); 
+
+}
+a{
+    text-decoration: none;
+    color:#f2f2f2;
+}
+
+
+h2{
+	color: #f2f2f2;
+	
+}
+
+.half{
+	width:45%;
+	margin-right: 2%;
+	display:inline-block;
+	float:left;
+}
+
+.whole{
+	clear:both;
+}
+
+summary{
+	font-style:normal;
+}
+
+details{
+	font-style: italic;
+}
+
+footer{
+	height:100px;
+	clear: both;
+}
+img{
+	width: 75px;
+}
+
+

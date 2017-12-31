@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+
+         <meta charset="utf-8">
+         <title>Power of Cascading Style Sheets</title>
+         <meta name="author" content="Iftekhar A Chowdhury">   
+         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   
+     <!-- This example is to see the power of CSS -->
+     <!-- Not a mobile first/responsive sample  -->
+     <!-- Please view only on large screen -->
+    
+    
+     <!-- Uncomment each of these style sheet and see the difference -->
+        <link rel="stylesheet" href="style2.css">
+    
+    <!-- <link rel="stylesheet" href="style1.css">--> 
+    <!--<link rel="stylesheet" href="style3.css">-->
+    <!--<link rel="stylesheet" href="style4.css">-->
+    <!-- <link rel="stylesheet" href="style5.css">-->
+    <!--<link rel="stylesheet" href="style6.css">-->
+    <!--<link rel="stylesheet" href="style7.css">-->
+    
+   
+      
+ 
+     
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['HTML',90 ],
+          ['CSS', 90],
+          ['JavaScript', 90],
+          ['Bootstrap', 90],
+          ['Responsive/UI', 80],
+          ['SEO', 80]
+        ]);
+
+        // Set chart options
+        var options = {'title':'Specialty & Skill Level',
+                       'width':400,
+                       'height':200};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  
+      
+
+ </head>
+
+<body>
+        <header>
+                 <h1> Iftekhar Ahmad Chowdhury</h1>
+                        <nav>
+                        <a href="one.html">I</a>
+                        <a href="two.two.html">II</a>
+                        <a href="three.html">III</a>
+                        <a href="songs.html">IV</a>
+                        </nav>
+            </header>
+
+
+        <section class="half" >
+            <h2>Favorite Foods</h2>
+            <ul>
+                  <li>Persimmon</li>
+                  <li>Samosa</li>
+                  <li>Kichuri</li>
+                  <li>Hilsha/Ilish Fish</li>
+
+            </ul>
+        </section>
+
+
+
+
+        <section class="half">
+             <h2>Achievements</h2>
+              <p>Progress in this course (100%)<progress value="1"></progress><br>
+              Progress in the Specialization capstone (70%)<progress value="70" max="100"></progress><br>
+              Progress in life goals (40%)<progress value="40" max="100"></progress></p>
+             <div id="chart_div"></div>
+       </section>
+     
+
+
+
+        <section class="whole">
+               <h2>More about me</h2>
+               <details open>
+                <summary>My hobbies</summary>
+                <p>I love playing Chess. Actually I am pretty good at it.<br>I also love cooking(My specialty is Super Spicy Foods!)</p>
+               </details>
+       </section>
+
+
+        <footer>
+                    <p>
+                            <img src="lightning.png" alt="new logo">
+                            This page was created by Iftekhar Chowdhury. To see more of my work, please  visit &rarr;
+                            <a href="http://www.ilovechittagong.com">&hearts; www.ilovechittagong.com &hearts;</a>
+                    </p>
+            <p style="text-align:center;color:#303f9f;">Copyright &copy; <script>document.write(new Date().getFullYear())</script> by Iftekhar Chowdhury</p>
+       </footer>
+
+
+    </body>
+</html>

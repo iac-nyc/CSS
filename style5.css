@@ -1,0 +1,31 @@
+/* 
+Author: Iftekhar A Chowdhury;
+Version: 5.0.1;
+ */
+header{
+  background:#B3B3B3;
+}
+
+h1{
+   color:#FFFFFF;
+   text-align:center;
+   text-transform: uppercase;
+}
+
+h2{
+   text-transform: uppercase;
+   color: #050579;
+}
+
+section{
+  background:#8d8d8d;
+}
+
+a{
+  background:#d7d7d7;
+  color:#000000
+}
+
+img{
+  display:none;
+}
